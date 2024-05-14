@@ -46,10 +46,31 @@ dobrarNumeros(numero)*/
 //     }
 // transformarCaps(nomes)
 
- function transformarCaps(nomes){
-    return nomes.map(nomes => nomes.toUpperCase())
-}
+//  function transformarCaps(nomes){
+//     return nomes.map(nomes => nomes.toUpperCase())
+// }
 
 
-let mostrarNomes = transformarCaps(["Lucas", "Fernando", "Caio"])
-console.log(mostrarNomes)
+// let mostrarNomes = transformarCaps(["Lucas", "Fernando", "Caio"])
+// console.log(mostrarNomes)
+
+const filmes = [
+    {
+        nome: "Velozes e Furiosos",
+        diretor: "Vin Diesel",
+        ano: 2001
+    },
+    {
+        nome: "Senhor dos Aneis",
+        diretor: "Gandalf",
+        ano: 1997
+    },
+    {
+        nome: "Batman",
+        diretor: "Nolan",
+        ano: 2022
+    }
+]
+
+//console.log(filmes.map(filme => filme.nome))
+console.log(filmes.filter(filme => filme.ano > 2000))
